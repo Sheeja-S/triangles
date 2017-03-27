@@ -28,13 +28,13 @@ describe('Triangle') do
 
   describe('#scalene?') do
     it("returns false when any side of the triangle are equal") do
-      test_triangle = Triangle.new(6,7,8 )
-      expect(test_triangle.isoscles?()).to(eq(false))
+      test_triangle = Triangle.new(6,6,8 )
+      expect(test_triangle.scalene?()).to(eq(false))
     end
 
     it("returns true when no side of the triangle are equal") do
       test_triangle = Triangle.new(6,7,9)
-      expect(test_triangle.isoscles?()).to(eq(true))
+      expect(test_triangle.scalene?()).to(eq(true))
     end
   end
 end
